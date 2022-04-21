@@ -1,0 +1,145 @@
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+*:focus {
+    outline: 3px dashed var(--text-color);
+    outline-offset: 3px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #000;
+    font-family: "Robot", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 540px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* MAIN-CONTENT */
+.main-content {
+    background-color: #ceb10e;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.site-heading {
+    margin: 0;
+    font-size: 20px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.exit-img {
+    width: 24px;
+    height: 24px;
+}
+
+.form {
+    position: relative;
+    left: 60px;
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 10px;
+    border-bottom: 1px solid #999;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #777;
+}
+
+input {
+    border: none;
+    padding-top: 15px;
+}
+
+textarea {
+    padding-top: 15px;
+    padding-bottom: 50px;  
+    border: none;
+    resize: vertical;
+}
+
+.connect-input {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+}
+
+.connect-input label {
+    border-bottom: none;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 40px;
+    padding-right: 60px;
+}
+
+.footer-btn {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+}
+
+.footer-btn:not(:last-child) {
+    margin-right: 15px;
+}
