@@ -39,6 +39,16 @@ a {
 
 button {
     cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:active {
+    opacity: 0.6;
 }
 
 .container {
@@ -63,19 +73,15 @@ button {
     padding: 60px;
 }
 
-.site-heading {
+.site-header__heading {
     margin: 0;
     font-size: 20px;
 }
 
-button {
-    border: none;
-    background-color: transparent;
-}
-
-.exit-img {
+.site-header__exit-img {
     width: 24px;
     height: 24px;
+    color: #fff;
 }
 
 .form {
@@ -86,7 +92,7 @@ button {
     margin-bottom: 40px;
 }
 
-.profile-img {
+.form__img {
     position: absolute;
     top: 0;
     transform: translateY(-50%);
@@ -115,31 +121,32 @@ textarea {
     padding-bottom: 50px;  
     border: none;
     resize: vertical;
+    min-height: 100px;
 }
 
-.connect-input {
+.form__input {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #999;
 }
 
-.connect-input label {
+.form__input label {
     border-bottom: none;
 }
 
-.main-footer {
+.footer {
     display: flex;
     justify-content: end;
     padding-bottom: 40px;
     padding-right: 60px;
 }
 
-.footer-btn {
+.footer__btn {
     font-size: 16px;
     font-weight: 500;
     color: #444;
 }
 
-.footer-btn:not(:last-child) {
+.footer__btn:not(:last-child) {
     margin-right: 15px;
 }
